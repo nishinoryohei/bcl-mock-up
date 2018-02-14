@@ -1,0 +1,185 @@
+
+body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+@charset"utf-8";
+
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+html {
+    font-size: 62.5%;
+}
+body{
+	color: #333;
+	font-size:1.2rem;
+	font-family: 'Permanent Marker', cursive,"Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+*,*::before,*::after{
+	box-sizing: border-box;
+}
+a:link, a:visited,a:active{
+	color: #7cfc00;
+	text-decoration: none;
+	transition: 0.2s;
+}
+a:hover{
+	color:#ffa500;
+}
+.header{
+	width: 100%;
+	height: 70px;
+	background-color: #c71585;
+	color: #7cfc00;
+}
+.logo{
+	background: url(../bcl-mock-up-yasui/logo_bcl.png) no-repeat top;
+    background-size: contain;
+    width: 16%;
+    height: 70px;
+    padding-left: 30px;
+    float: left;
+}
+.login-signup-area{
+	padding-top: 50px;
+	padding-right: 30px;
+	float: right;
+}
+.login{
+	padding-right: 10px;
+	display: inline-block;
+	text-align: right;
+}
+.signup{
+	display: inline-block;
+	text-align: right;
+}
+.search-area{
+	width: 70%;
+	padding: 30px 0;
+	margin: 0 auto;
+	text-align: center;
+}
+.search-title{
+	padding-bottom: 10px;
+	font-size: 3rem;
+	color:#7cfc00 ;
+	text-shadow: 4px 4px 4px #ffa500;
+	letter-spacing: 2rem;
+}
+.search-form{
+	width: 300px;
+}
+.index-area{
+	width: 100%;
+}
+.side-menu{
+	float: left;
+	width: 13%;
+	height: 500px;
+	margin-left: 20px;	
+	background-color: #c71585
+}
+.side-menu-title{
+	text-align: center;
+	padding-top: 30px;
+	font-size: 2rem;
+	color: #7cfc00;
+	letter-spacing: 0.6rem;
+}
+.genre-area{
+	padding-left: 20px;
+}
+.genre{
+	padding: 10px 0;
+	font-size: 1.6rem;
+}
+.main{
+	width: 100%;
+}
+.main-content{
+	float: left;
+	width: 80%;
+	padding: 0 20px;
+}
+.content-area{
+	display: inline-block;
+	width: 33%;
+	height: 210px;
+	padding: 10px 0;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.gazou{
+	width: 100px;
+	height: 100px;
+	margin: 20px auto;
+	background-color: yellow;
+}
+.cd-title{
+	display: inline-block;
+	font-size: 2.2rem;
+	color: white;
+}
+.cd-price{
+	font-size: 1.6rem;
+	padding: 10px 0;
+}
+.cd-artist{
+	font-size: 1.6rem;
+}
+.content-area:nth-child(odd){
+}
+.content-area:nth-child(even){
+
+}
+footer{
+        /*background-color: #E21A70;*/
+  	background: linear-gradient(135deg,#C622CD,#FF8F00);
+    height: 120px;
+}
+.footer_text{
+    text-align: center;
+    color: white;
+    padding: 40px;
+}
