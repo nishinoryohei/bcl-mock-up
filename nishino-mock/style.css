@@ -53,14 +53,18 @@ html {
 body{
 	color: #333;
 	font-size:1.2rem;
-	font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+	font-family: 'Permanent Marker', cursive,"Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 *,*::before,*::after{
 	box-sizing: border-box;
 }
-a:link, a:visited,a:hover,a:active{
-	color: #d03c56;
+a:link, a:visited,a:active{
+	color: #7cfc00;
 	text-decoration: none;
+	transition: 0.2s;
+}
+a:hover{
+	color:#ffa500;
 }
 .header{
 	width: 100%;
@@ -69,9 +73,12 @@ a:link, a:visited,a:hover,a:active{
 	color: #7cfc00;
 }
 .logo{
-	display: inline-block;
-	padding:10px 20px;
-	font-size: 5.5rem;
+	background: url(../bcl-mock-up-yasui/logo_bcl.png) no-repeat top;
+    background-size: contain;
+    width: 16%;
+    height: 70px;
+    padding-left: 30px;
+    float: left;
 }
 .login-signup-area{
 	padding-top: 50px;
@@ -95,7 +102,9 @@ a:link, a:visited,a:hover,a:active{
 }
 .search-title{
 	padding-bottom: 10px;
-	font-size: 2rem;
+	font-size: 3rem;
+	color:#7cfc00 ;
+	text-shadow: 4px 4px 4px #ffa500;
 	letter-spacing: 2rem;
 }
 .search-form{
@@ -108,13 +117,15 @@ a:link, a:visited,a:hover,a:active{
 	float: left;
 	width: 13%;
 	height: 500px;
-	margin-left: 20px;
-	background-color: pink;
+	margin-left: 20px;	
+	background-color: #c71585
 }
 .side-menu-title{
 	text-align: center;
 	padding-top: 30px;
 	font-size: 2rem;
+	color: #7cfc00;
+	letter-spacing: 0.6rem;
 }
 .genre-area{
 	padding-left: 20px;
@@ -134,7 +145,10 @@ a:link, a:visited,a:hover,a:active{
 .content-area{
 	display: inline-block;
 	width: 33%;
-	height: 200px;
+	height: 210px;
+	padding: 10px 0;
+	margin-bottom: 30px;
+	text-align: center;
 }
 .gazou{
 	width: 100px;
@@ -143,21 +157,29 @@ a:link, a:visited,a:hover,a:active{
 	background-color: yellow;
 }
 .cd-title{
+	display: inline-block;
 	font-size: 2.2rem;
-	text-align: center;
+	color: white;
 }
 .cd-price{
 	font-size: 1.6rem;
-	padding-left: 20px;
+	padding: 10px 0;
 }
 .cd-artist{
 	font-size: 1.6rem;
-	padding-right: 20px;
-	text-align: right;
 }
 .content-area:nth-child(odd){
-	background-color: red;
 }
 .content-area:nth-child(even){
-	background-color: blue;
+
+}
+footer{
+        /*background-color: #E21A70;*/
+  	background: linear-gradient(135deg,#C622CD,#FF8F00);
+    height: 120px;
+}
+.footer_text{
+    text-align: center;
+    color: white;
+    padding: 40px;
 }

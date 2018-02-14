@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BCL</title>
+    <link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <style type="text/css">
+      body{
+        /*background-image: linear-gradient(-135deg,#1400c8,#b900b4,#f50000);*/
+        width: 100%;
+        margin: 0;
+        font-family: "Rounded Mplus 1c";
+      }
+      header{
+        background: linear-gradient(135deg,#C622CD,#FF8F00);
+      }
+      .logo_box{
+        background: url(logo_bcl.png) no-repeat top;
+        background-size: contain;
+        width: 40%;
+        height: 200px;
+        float: left;
+      }
+      .nav_box{
+        width: 60%;
+        float: right;
+        padding-top: 60px;
+      }
+      ul{
+        list-style: none;
+        display: flex;
+      }
+      li{
+        flex: 1 0 auto;
+      }
+      a{
+        text-decoration: none;
+        color: white;
+        padding: 50px;
+      }
+      a:hover{
+        background: white;
+        color: #E21A70;
+        border-radius: 50%;
+      }
+      .clear{
+        clear: both;
+      }
+      section.search_section{
+        /*background-image: linear-gradient(135deg,#C622CD,#FF8F00);*/
+        /*background-color: #E21A70;*/
+        padding: 10px;
+      }
+      div.search_box{
+        width: 70%;
+        margin: 0 auto;
+      }
+      input.search_field{
+        width: 100%;
+        height: 50px;
+        font-size: 18px;
+        padding-left: 10px;
+        border: 1px solid gray;
+      }
+      section.sign_up_section{
+        padding: 50px 0 50px;
+        background-color: ivory;
+      }
+      div.sign_up_box{
+        text-align: center;
+      }
+      h1{
+        text-align: center;
+      }
+      .form_name_box1, .form_name_box2,
+      .form_email_box, .form_password_box1,
+      .form_password_box2, .form_prefecture_box,
+      .form_city_box, .form_building_box,
+      .form_btn_box{
+        width: 65%; margin: 0 auto;
+        padding: 0 0 10px;
+      }
+      .form_name_sub_box1, .form_name_sub_box3{
+        float: left;
+        width: 50%;
+        text-align: right;
+      }
+      .form_name_sub_box2, .form_name_sub_box4{
+        float: right;
+        width: 50%;
+        text-align: left;
+      }
+      .form_name_field{
+        width: 97%;
+      }
+      input{
+        width: 98.5%;
+        height: 40px;
+        font-size: 16px;
+        padding-left: 10px;
+        border-radius: 5px;
+        border: 1px solid black;
+      }
+      .form_btn{
+        width: 25%;
+        height: 50px;
+        margin-top : 40px;
+        background: #E21A70;
+        color: #fff;
+        padding: 10px 20px;
+        border: 1px solid gray;
+      }
+      .form_btn:hover{
+        background: linear-gradient(135deg,#C622CD,#FF8F00);
+      }
+      select{
+        margin: 0 1000px 0 0;
+      }
+      p{
+        margin: 0;
+        text-align: left;
+      }
+      footer{
+        /*background-color: #E21A70;*/
+        background: linear-gradient(135deg,#C622CD,#FF8F00);
+        height: 120px;
+      }
+      .footer_text{
+        text-align: center;
+        color: white;
+        padding: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo_box">
+        <!-- <a style="background: url(/logo.png);"></a> -->
+      </div>
+      <div class="nav_box">
+        <nav>
+          <ul>
+            <li><a href="#">ログイン</a></li>
+            <li><a href="#">会員登録</a></li>
+            <li><a href="#">商品一覧</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="clear"></div>
+      <section class="search_section">
+        <div class="search_box">
+          <form>
+            <input class="search_field" type="text" name="keyword" placeholder="キーワードで検索">
+          </form>
+        </div>
+      </section>
+    </header>
+    <section class="sign_up_section">
+      <div class="sign_up_box">
+        <h1>会員登録</h1>
+        <div class="form_box">
+          <form>
+            <div class="form_name_box1">
+              <div class="form_name_sub_box1">
+                <p>姓・漢字</p>
+                <input class="form_name_field" type="text" placeholder="例）山田">
+              </div>
+              <div class="form_name_sub_box2">
+                <p>名・漢字</p>
+                <input class="form_name_field" type="text" placeholder="例）太郎">
+              </div>
+              <div class="clear"></div>
+            </div>
+            <div class="form_name_box2">
+              <div class="form_name_sub_box3">
+                <p>姓・かな</p>
+                <input class="form_name_field" type="text" placeholder="例）やまだ">
+              </div>
+              <div class="form_name_sub_box4">
+                <p>名・かな</p>
+                <input class="form_name_field" type="text" placeholder="例）たろう">
+              </div>
+              <div class="clear"></div>
+            </div>
+            <div class="form_email_box">
+              <p>Eメール</p>
+              <input type="email" placeholder="sample@email.com">
+            </div>
+            <div class="form_password_box1">
+              <p>パスワード</p>
+              <input type="password" placeholder="6文字以上">
+            </div>
+            <div class="form_password_box2">
+              <p>確認用パスワード</p>
+              <input type="password" placeholder="6文字以上">
+            </div>
+            <div class="form_prefecture_box">
+              <p>都道府県</p>
+              <select>
+                <label>
+                  <option>選択して下さい</option>
+                  <option>北海道</option>
+                  <option>東京都</option>
+                  <option>沖縄県</option>
+                </label>
+              </select>
+            </div>
+            <div class="form_city_box">
+              <p>市区町村・丁目/番地/号</p>
+              <input type="text" placeholder="◯◯市☓☓町1-2-3">
+            </div>
+            <div class="form_building_box">
+              <p>建物名・ビル名</p>
+              <input type="text" placeholder="△△ビルディング101号室">
+            </div>
+            <div class="form_btn_box">
+              <input class="form_btn" type="submit" value="会員登録">
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p class="footer_text">
+        ©2018 BCL.inc
+      </p>
+    </footer>
+  </body>
+</html>
